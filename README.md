@@ -1,14 +1,14 @@
 Easy stopwatch to measure time intervals between different code portions and evaluate mean and std deviation.
 
-Usage:
+## Usage
 
-###################################
+```
 Tazio::Stopwatch sw;
 
 // Optional 
 sw.set_output_file("/home/user/log.txt");
 
-for (...iterations...)
+for (...iterations...) {
     sw.init(); // Fix initial time
     
     // ... do stuff
@@ -22,5 +22,5 @@ for (...iterations...)
     // ....
 
     sw.end();
-
-##################################
+    }
+```
